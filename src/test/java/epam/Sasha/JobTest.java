@@ -17,5 +17,7 @@ public class JobTest extends BaseTest {
         mainPage.fillLocation("Minsk");
         mainPage.fillSkills("Software Test Engineering");
         mainPage.fillWhere();
+        mainPage.search();
+        Assert.assertTrue(mainPage.CheckJobs(););
     }
 }

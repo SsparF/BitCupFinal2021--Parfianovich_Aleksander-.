@@ -17,6 +17,7 @@ public class MainPage extends BasePage {
     private By chooseSkills= new By.ByXPath("//span[@class='checkbox-custom-label']");
     private By selectedSkill= new By.ByXPath("//div[@class='selected-params selected']");
     private By selectWhere= new By.ByXPath("//input[@id='id-ce1e74aa-e69b-3bd2-9f9f-41628029ec68-remote']");
+    private By searchButton= new By.ByXPath("//button[@class='recruiting-search__submit']");
     private By jobs= new By.ByXPath("//div[@class='search-result__item-info']");
     private By jobInfo= new By.ByXPath("//ul[@class='bullet-list']//li");
 
@@ -71,6 +72,10 @@ public class MainPage extends BasePage {
 
     public void fillWhere() {
         driver.findElement(selectWhere).click();
+    }
+
+    public void search() {
+        driver.findElement(searchButton).click();
     }
 
     public boolean CheckJobs() {
