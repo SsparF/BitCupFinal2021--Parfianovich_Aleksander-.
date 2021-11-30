@@ -1,0 +1,7 @@
+.idea
+*.log
+*.jar
+target/
+.classpath
+.project
+
