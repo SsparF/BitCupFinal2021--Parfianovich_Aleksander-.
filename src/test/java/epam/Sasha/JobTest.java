@@ -13,5 +13,9 @@ public class JobTest extends BaseTest {
         Assert.assertTrue(globalPage.isOpened());
         mainPage=globalPage.goBack();
         Assert.assertTrue(mainPage.isOpened());
+        mainPage.fillKeyWord("Jenkins");
+        mainPage.fillLocation("Minsk");
+        mainPage.fillSkills("Software Test Engineering");
+        mainPage.fillWhere();
     }
 }

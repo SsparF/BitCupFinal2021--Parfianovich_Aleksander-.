@@ -14,7 +14,7 @@ public class GlobalPage extends BasePage {
 
     @Override
     public boolean isOpened() {
-        return false;
+        return driver.findElement(title).isDisplayed();
     }
 
     public MainPage goBack() {
